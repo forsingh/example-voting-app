@@ -24,7 +24,7 @@ services:
       placement:
         constraints: [node.role == manager]
   vote:
-    image: nginx
+    image: tomcat:8.0
     ports:
       - 5000:80
     networks:
